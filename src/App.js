@@ -1,7 +1,8 @@
 
 import { useState } from 'react';
-import './App.css';
 import Child3 from './child3';
+import Rating from './machine task rating'
+import './App.css';
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
  <div className='child a' onClick={()=>setdisplay(!display)}><h1>{display ? obj.name:obj.age}</h1></div>
  <div className='child b'> 2</div>
  <Child3 setdisplay={setdisplay} display={display} obj={obj}/>
+ <Rating/>
   </div>
  )
 }
